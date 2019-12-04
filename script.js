@@ -1,4 +1,7 @@
-document.addEventListener("DOMContentLoaded", function(){
+function generateModel(){
+
+    console.log("hi");
+
     var models = Object.create({});
 
     var asos_m_count = 31;
@@ -8,15 +11,11 @@ document.addEventListener("DOMContentLoaded", function(){
         if(x>0 && x <= asos_m_count){
             models[x] = { key: x, brand: "Asos", gender: "male", imageURL: "/imgs/asos-model-imgs/male/" + x + ".jpg" };
         }
-        // if (x >= asos_f_count){
-        //     models[x] = { key: x, brand: "Asos", gender: "female", imageURL: "/imgs/asos-model-imgs/female/" + (x+1) + ".jpg" };
-        // }
         else {
             models[x] = { key: x + 1, brand: "Asos", gender: "female", imageURL: "/imgs/asos-model-imgs/female/" + (x - asos_f_count - 9) + ".jpg" }
         }
     }
 
-    // console.table(models);
 
     let imageContainer = document.getElementById("random-img");
     let totalEntries = asos_m_count + asos_f_count;
@@ -27,10 +26,8 @@ document.addEventListener("DOMContentLoaded", function(){
             var value = models[key];
             if (value.key === randomNo) {
                 console.log(value.imageURL);
+                imageContainer.setAttribute("src", value.imageURL);
             }
         }
     }
-
-
-
-})
+}

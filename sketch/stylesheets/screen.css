@@ -5,9 +5,10 @@
 /* line 1, ../sass/custom/form.scss */
 h1 {
   margin: 20px 0 20px 0;
+  text-align: center;
 }
 
-/* line 5, ../sass/custom/form.scss */
+/* line 6, ../sass/custom/form.scss */
 .linear-wipe {
   background: linear-gradient(to right, #e66465, #9198e5, #e66465);
   background-size: 200% auto;
@@ -22,8 +23,18 @@ h1 {
     background-position: 200% center;
   }
 }
-/* line 21, ../sass/custom/form.scss */
+/* line 22, ../sass/custom/form.scss */
+.img-container {
+  display: flex;
+}
+
+/* line 26, ../sass/custom/form.scss */
 #random-img {
-  height: 200px;
-  width: 200px;
+  margin: 0 auto;
+  max-height: 100vh;
+}
+
+/* line 31, ../sass/custom/form.scss */
+.form-group {
+  text-align: center;
 }

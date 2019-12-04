@@ -1,5 +1,6 @@
 h1 {
-    margin: 20px 0 20px 0;  
+	margin: 20px 0 20px 0;  
+	text-align: center;
 };
 
 .linear-wipe { 
@@ -18,7 +19,15 @@ h1 {
 	}
 }
 
+.img-container {
+	display: flex;
+}
+
 #random-img {
-	height: 200px;
-	width: 200px;
+	margin: 0 auto;
+	max-height: 100vh;
+}
+
+.form-group {
+	text-align: center;
 }

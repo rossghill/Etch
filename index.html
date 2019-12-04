@@ -9,17 +9,17 @@
     <link rel="stylesheet" href="https://use.typekit.net/bpg4how.css">
     <link href="./sketch/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
     <h1 class="linear-wipe">Sketch</h1>
 
-
-
+<div class="form-group">
     <label class="form-label" for="selectSource">Select source:</label>
 
     <div class="select-area">
-        <select class="form-control" name="selectThis" id="selectSource">
+        <select class="form-control" name="selectSource" id="selectSource" form="sketchForm">
             <option value="0">- All -</option>
             <option value="1">H&M</option>
             <option value="2">ASOS</option>
@@ -29,7 +29,7 @@
 
     <label class="form-label" for="selectGender">Select gender:</label>
     <div class="select-area">
-        <select class="form-control" name="selectGender" id="selectThis">
+        <select class="form-control" name="selectGender" id="selectThis" form="sketchForm">
             <option value="0">- All -</option>
             <option value="1">Male</option>
             <option value="2">Female</option>
@@ -39,7 +39,7 @@
 
     <label class="form-label" for="selectTime">Select pose time:</label>
     <div class="select-area">
-        <select class="form-control" name="selectTime" id="selectThis">
+        <select class="form-control" name="selectTime" id="selectThis" form="sketchForm">
             <option value="0">1 min</option>
             <option value="1">2 mins</option>
             <option value="2">5 mins</option>
@@ -49,10 +49,13 @@
             <option value="6">30 mins</option>
             </optgroup>
         </select>
-    </div>
+    </div>  
 
-<img id="random-img" src="#"/>
-    <script src="script.js"></script>
+    <form action="/sketchScreen.html" id="sketchForm">
+        <button type="submit" onclick="">Submit</input>
+    </form>
+</div>
+    
 </body>
 
 </html>
