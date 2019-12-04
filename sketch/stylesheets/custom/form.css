@@ -1,13 +1,9 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 1, ../sass/custom/form.scss */
+/* line 1, ../../sass/custom/form.scss */
 h1 {
   margin: 20px 0 20px 0;
 }
 
-/* line 5, ../sass/custom/form.scss */
+/* line 5, ../../sass/custom/form.scss */
 .linear-wipe {
   background: linear-gradient(to right, #e66465, #9198e5, #e66465);
   background-size: 200% auto;
@@ -22,7 +18,7 @@ h1 {
     background-position: 200% center;
   }
 }
-/* line 21, ../sass/custom/form.scss */
+/* line 21, ../../sass/custom/form.scss */
 #random-img {
   height: 200px;
   width: 200px;
