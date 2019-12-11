@@ -20,39 +20,39 @@
 
     <div class="select-area">
         <select class="form-control" name="selectSource" id="selectSource" form="sketchForm">
-            <option value="0">- All -</option>
-            <option value="1">H&M</option>
-            <option value="2">ASOS</option>
+            <option value="All">- All -</option>
+            <option value="HM">H&M</option>
+            <option value="ASOS">ASOS</option>
             </optgroup>
         </select>
     </div>
 
     <label class="form-label" for="selectGender">Select gender:</label>
     <div class="select-area">
-        <select class="form-control" name="selectGender" id="selectThis" form="sketchForm">
-            <option value="0">- All -</option>
-            <option value="1">Male</option>
-            <option value="2">Female</option>
+        <select class="form-control" name="selectGender" id="selectGender" form="sketchForm">
+            <option value="All">- All -</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
             </optgroup>
         </select>
     </div>
 
     <label class="form-label" for="selectTime">Select pose time:</label>
     <div class="select-area">
-        <select class="form-control" name="selectTime" id="selectThis" form="sketchForm">
-            <option value="0">1 min</option>
-            <option value="1">2 mins</option>
-            <option value="2">5 mins</option>
-            <option value="3">10 mins</option>
-            <option value="4">15 mins</option>
-            <option value="5">20 mins</option>
-            <option value="6">30 mins</option>
+        <select class="form-control" name="selectTime" id="selectTime" form="sketchForm">
+            <option value="1">1 min</option>
+            <option value="2">2 mins</option>
+            <option value="5">5 mins</option>
+            <option value="10">10 mins</option>
+            <option value="15">15 mins</option>
+            <option value="20">20 mins</option>
+            <option value="30">30 mins</option>
             </optgroup>
         </select>
     </div>  
 
-    <form action="/sketchScreen.html" id="sketchForm">
-        <button type="submit" onclick="">Submit</input>
+    <form action="/sketchScreen.php" id="sketchForm" method="POST">
+        <button type="submit" onclick="">Go</button>
     </form>
 </div>
     

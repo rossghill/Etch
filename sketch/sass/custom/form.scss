@@ -11,7 +11,7 @@ h1 {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	
-	animation: shine 5s linear infinite;
+	animation: shine 4s linear infinite;
 	@keyframes shine {
 		to {
 		background-position: 200% center;
@@ -30,4 +30,19 @@ h1 {
 
 .form-group {
 	text-align: center;
+}
+
+button {
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+	overflow: visible;
+	text-transform: none;
+	-webkit-appearance: button;
+	background: #FFF;
+	border: 3px solid #9198e5;
+	padding: 0.5em;
+	margin-top: 0.3em;
+	cursor: pointer;
 }
