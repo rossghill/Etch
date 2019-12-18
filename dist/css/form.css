@@ -1,0 +1,40 @@
+h1 {
+  margin: 20px 0 20px 0;
+  text-align: center; }
+
+.linear-wipe {
+  background: linear-gradient(to right, #e66465, #9198e5, #e66465);
+  background-size: 200% auto;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite; }
+
+@keyframes shine {
+  to {
+    background-position: 200% center; } }
+
+.img-container {
+  display: flex; }
+
+#random-img {
+  margin: 0 auto;
+  max-height: 100vh; }
+
+.form-group {
+  text-align: center; }
+
+button {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0.0;
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button;
+  background: #FFF;
+  border: 3px solid #9198e5;
+  padding: 0.5em;
+  margin-top: 0.3em;
+  cursor: pointer; }
