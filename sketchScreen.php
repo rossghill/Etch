@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="https://use.typekit.net/bpg4how.css">
         <link href="./sketch/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="./style.css">
-        <script type="text/javascript" src="script.js"></script>
 
 </head>
 
@@ -27,14 +26,16 @@
     
 </div>    
     
-<a href="http://localhost:2222/">[ Back ]</a>
+<a href="http://localhost:8000/">[ Back ]</a>
 
     <div class="img-container">
-        <img id="random-img" src="#" />
+
     </div>
 
 
-<script src="/script.js"></script>    
+    <script src="/pics.js"></script>  
+    <script src="/script.js"></script>
+
 </body>
 
 </html>
