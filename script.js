@@ -6,10 +6,13 @@ document.addEventListener('DOMContentLoaded', function () {
     let genderData = document.querySelector('#gender_data').innerText;
     let timeData = document.querySelector('#time_data').innerText;
     let imageContainer = document.querySelector('.img-container');
+    let skipBtn = document.querySelector('.skip-button');
+    let display = document.querySelector('#time');
+    let genderSet;
 
 
     function getModels(){
-        let genderSet;
+        
         if (genderData == "All") {
             let randomNo = Math.random();
             genderSet = (randomNo > 0.5) ? m : f;  
@@ -20,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
         else if (genderData == "F") {
             genderSet = f;
         }
-        return genderSet;
+        // return genderSet;
     }
 
     function setModel(){
@@ -34,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
         imageContainer.innerHTML = genderSet[modelNo];
     }
 
-    function setTimer(time) {
+    function setPoseTime(time) {
         switch (time) {
             case "1":
                 return 60000;
@@ -53,16 +56,46 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    let genderSet = getModels();
+    function startTimer(duration, display) {
+        duration = duration / 1000;
+        var timer = duration, minutes, seconds;
+        setInterval(function () {
+            minutes = parseInt(timer / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+    
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+    
+            display.textContent = minutes + ":" + seconds;
+    
+            if (--timer < 0) {
+                timer = duration;
+            }
+        }, 1000);
+    }
+
+    // Initial pose and time configure - to run once
+    getModels();
     setModel();
-    let poseTime = setTimer(timeData);
-    // console.log(poseTime);
+    let poseTime = setPoseTime(timeData);
+    startTimer(poseTime, display);
 
-    setInterval(getModels, poseTime)
-    setInterval(setModel, poseTime);
+    // Runs every second to check timer
+    setInterval(function(){
+        if(display.textContent == '00:00'){
+            getModels();
+            setModel();
+            startTimer(poseTime, display);
+        }
+    }, 1000);
 
 
-
+    skipBtn.addEventListener('click', function(){
+        getModels();
+        setModel();
+        let poseTime = setPoseTime(timeData);
+        startTimer(poseTime, display);
+    });
 
 
 })

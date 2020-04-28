@@ -1,6 +1,7 @@
 h1 {
   margin: 20px 0 20px 0;
-  text-align: center; }
+  text-align: center;
+  font-size: 5rem; }
 
 .linear-wipe {
   background: linear-gradient(to right, #e66465, #9198e5, #e66465);

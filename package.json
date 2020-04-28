@@ -5,9 +5,10 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass -o dist/css/ sketch/sass/custom",
+    "scss": "node-sass -o sketch/stylesheets/custom sketch/sass/custom",
     "watch:css": "onchange 'sketch/sass/custom/*.scss' -- npm run scss",
-    "uglify": "uglifyjs -o dist/js/scripts.min.js script.js"
+    "uglify": "uglifyjs -o dist/js/scripts.min.js script.js",
+    "build": "php -S localhost:8000"
   },
   "repository": {
     "type": "git",

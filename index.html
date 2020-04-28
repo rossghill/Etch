@@ -8,53 +8,57 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://use.typekit.net/bpg4how.css">
     <link href="./sketch/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="./style.css">
+    <link href="./sketch/stylesheets/custom/form.css" media="screen, projection" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <h1 class="linear-wipe">Sketch</h1>
+    
+    <div class="form-container">
+        <h1 class="linear-wipe">Sketch</h1>
+        <div class="form-group">
+            <!-- <label class="form-label" for="selectSource">Select source:</label> -->
 
-<div class="form-group">
-    <!-- <label class="form-label" for="selectSource">Select source:</label> -->
+            <!-- <div class="select-area">
+                <select class="form-control" name="selectSource" id="selectSource" form="sketchForm">
+                    <option value="All">- All -</option>
+                    <option value="HM">H&M</option>
+                    <option value="ASOS">ASOS</option>
+                    <option value="Unsplash">Unsplash</option>
+                    </optgroup>
+                </select>
+            </div> -->
 
-    <!-- <div class="select-area">
-        <select class="form-control" name="selectSource" id="selectSource" form="sketchForm">
-            <option value="All">- All -</option>
-            <option value="HM">H&M</option>
-            <option value="ASOS">ASOS</option>
-            <option value="Unsplash">Unsplash</option>
-            </optgroup>
-        </select>
-    </div> -->
+            <label class="form-label" for="selectGender">Select gender:</label>
+            <div class="select-area">
+                <select class="form-control" name="selectGender" id="selectGender" form="sketchForm">
+                    <option value="All">Any</option>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                    </optgroup>
+                </select>
+            </div>
 
-    <label class="form-label" for="selectGender">Select gender:</label>
-    <div class="select-area">
-        <select class="form-control" name="selectGender" id="selectGender" form="sketchForm">
-            <option value="All">- All -</option>
-            <option value="M">Male</option>
-            <option value="F">Female</option>
-            </optgroup>
-        </select>
+            <label class="form-label" for="selectTime">Select pose time:</label>
+            <div class="select-area">
+                <select class="form-control" name="selectTime" id="selectTime" form="sketchForm">
+                    <option value="1">1 min</option>
+                    <option value="2">2 mins</option>
+                    <option value="5">5 mins</option>
+                    <option value="10">10 mins</option>
+                    <option value="15">15 mins</option>
+                    <option value="20">20 mins</option>
+                    <option value="30">30 mins</option>
+                    </optgroup>
+                </select>
+            </div>  
+
+            <form action="/sketchScreen.php" id="sketchForm" method="POST">
+                <button type="submit" onclick="">Go</button>
+            </form>
+        </div>
     </div>
 
-    <label class="form-label" for="selectTime">Select pose time:</label>
-    <div class="select-area">
-        <select class="form-control" name="selectTime" id="selectTime" form="sketchForm">
-            <option value="1">1 min</option>
-            <option value="2">2 mins</option>
-            <option value="5">5 mins</option>
-            <option value="10">10 mins</option>
-            <option value="15">15 mins</option>
-            <option value="20">20 mins</option>
-            <option value="30">30 mins</option>
-            </optgroup>
-        </select>
-    </div>  
-
-    <form action="/sketchScreen.php" id="sketchForm" method="POST">
-        <button type="submit" onclick="">Go</button>
-    </form>
-</div>
+    <div class="footer">Ross Hill, 2020</div>
 
 </body>
 
