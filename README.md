@@ -1,7 +1,5 @@
 # Life Drawing Tool
-This is a web app designed to simulate a life drawing class, using high-resolution photos from Unsplash
-
-This app is a simple to use tool to provide high quality model images for sketching.
+This is a simple to use web app designed to simulate a life drawing class, using high-resolution photos from Unsplash
 
 ## Why did I build this?
 
@@ -18,4 +16,5 @@ Initial settings allow selection of pose time and model type.
 
 Pause pose
 Avoid duplicate poses during a single session
+Landscape/ nature option
 Option to source direct from Unsplash API (experimental)
