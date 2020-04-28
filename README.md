@@ -11,6 +11,17 @@ After using similar tools online I noticed that the images provided are often of
 
 Initial settings allow selection of pose time and model type.
 
+## Run on your local machine
+
+After cloning or downloading the repo, in the root folder:
+
+```
+npm install
+npm run build
+```
+
+Go to http://localhost:8000/ in your browser of choice.
+
 
 ## Features that may be included in the future...
 
