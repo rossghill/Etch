@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let skipBtn = document.querySelector('.skip-button');
     let display = document.querySelector('#time');
     let genderSet;
+    let intv;
 
 
     function getModels(){
@@ -59,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function startTimer(duration, display) {
         duration = duration / 1000;
         var timer = duration, minutes, seconds;
-        setInterval(function () {
+        intv = setInterval(function () {
             minutes = parseInt(timer / 60, 10);
             seconds = parseInt(timer % 60, 10);
     
@@ -94,6 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
         getModels();
         setModel();
         let poseTime = setPoseTime(timeData);
+        clearInterval(intv);
         startTimer(poseTime, display);
     });
 
