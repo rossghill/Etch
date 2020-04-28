@@ -1,7 +1,7 @@
 # Life Drawing Tool
 This is a simple to use web app designed to simulate a life drawing class, using high-resolution photos from [Unsplash](https://unsplash.com)
 
-## Why did I build this?
+## Why did I build this? :woman_artist:
 
 After using similar tools online I noticed that the images provided are often of an inconsistent theme, low quaility and/or locked behind a paywall.
 
