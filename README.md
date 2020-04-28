@@ -3,7 +3,7 @@ This is a simple to use web app designed to simulate a life drawing class, using
 
 ## Why did I build this?
 
-After using similar tools online I noticed that the images provided are often of an inconsistent theme and/or low quaility, or locked behind a paywall.
+After using similar tools online I noticed that the images provided are often of an inconsistent theme, low quaility and/or locked behind a paywall.
 
 * Sketch uses high resolution images from a range of photographers, provided by Unsplash. 
 * These images are free to use, download, copy and manipulate under the [Unsplash license](https://unsplash.com/license).
