@@ -33,6 +33,10 @@ a:visited {
 	position: fixed;
 	img {
 		max-height: 90%;
+		transition: opacity .5s ease;
+	}
+	.fade {
+		opacity: 0;
 	}
 }
 
@@ -46,7 +50,6 @@ a:visited {
 }
 
 .formdata {
-	// visibility: hidden;
 	position: absolute;
 	left: -99999px;
 }
@@ -62,7 +65,7 @@ button {
 	background: #FFF;
 	border: 3px solid #9198e5;
 	padding: 0.5em;
-	margin-top: 0.3em;
+	margin-top: 20px;
 	cursor: pointer;
 }
 
@@ -71,6 +74,8 @@ button {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+	font-size: 1rem;
+	color: #9198e5;
 }
 
 .form-container {

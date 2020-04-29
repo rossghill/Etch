@@ -28,7 +28,7 @@
     
     
     <div class="control-group">
-        <div class="back-button"><a href="http://localhost:8000/">[ << Back ]</a></div>
+        <div class="back-button"><a href="/">[ << Back ]</a></div>
         <div id="time">00:00</div>
         <div class="skip-button"><a href="#">[ Skip >> ]</a></div>
     </div>
