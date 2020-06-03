@@ -1,5 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    // Set back btn
+    document.querySelector('.back-button').addEventListener('click', function(){
+        window.history.back();
+    });
+
     // Get form values from html url
     function getQueryVariable(variable)
     {
