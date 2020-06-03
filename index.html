@@ -13,50 +13,40 @@
 
 <body>
     
-    <div class="form-container">
-        <h1 class="linear-wipe">Etch</h1>
-        <div class="form-group">
-            <!-- <label class="form-label" for="selectSource">Select source:</label> -->
+    <form action="sketchscreen.html" id="sketchForm" method="GET">
+        <div class="form-container">
+            <h1 class="linear-wipe">Etch</h1>
+            <div class="form-group">
 
-            <!-- <div class="select-area">
-                <select class="form-control" name="selectSource" id="selectSource" form="sketchForm">
-                    <option value="All">- All -</option>
-                    <option value="HM">H&M</option>
-                    <option value="ASOS">ASOS</option>
-                    <option value="Unsplash">Unsplash</option>
-                    </optgroup>
-                </select>
-            </div> -->
+                <label for="selectGender" class="form-label">Select models:</label>
+                <div class="select-area">
+                    <select class="form-control" name="selectGender" id="selectGender" form="sketchForm">
+                        <option value="All">Any</option>
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                        </optgroup>
+                    </select>
+                </div>
 
-            <label class="form-label" for="selectGender">Select models:</label>
-            <div class="select-area">
-                <select class="form-control" name="selectGender" id="selectGender" form="sketchForm">
-                    <option value="All">Any</option>
-                    <option value="M">Male</option>
-                    <option value="F">Female</option>
-                    </optgroup>
-                </select>
-            </div>
+                <label for="selectTime" class="form-label" >Select pose time:</label>
+                <div class="select-area">
+                    <select class="form-control" name="selectTime" id="selectTime" form="sketchForm">
+                        <option value="1">1 min</option>
+                        <option value="2">2 mins</option>
+                        <option value="5">5 mins</option>
+                        <option value="10">10 mins</option>
+                        <option value="15">15 mins</option>
+                        <option value="20">20 mins</option>
+                        <option value="30">30 mins</option>
+                        </optgroup>
+                    </select>
+                </div>  
 
-            <label class="form-label" for="selectTime">Select pose time:</label>
-            <div class="select-area">
-                <select class="form-control" name="selectTime" id="selectTime" form="sketchForm">
-                    <option value="1">1 min</option>
-                    <option value="2">2 mins</option>
-                    <option value="5">5 mins</option>
-                    <option value="10">10 mins</option>
-                    <option value="15">15 mins</option>
-                    <option value="20">20 mins</option>
-                    <option value="30">30 mins</option>
-                    </optgroup>
-                </select>
-            </div>  
-
-            <form action="/sketchScreen.php" id="sketchForm" method="POST">
                 <button type="submit" onclick="">Go</button>
-            </form>
+            
+            </div>
         </div>
-    </div>
+    </form>
 
     <div class="footer">Ross Hill, 2020</div>
 

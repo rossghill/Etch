@@ -1,10 +1,24 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    // Get form values from html url
+    function getQueryVariable(variable)
+    {
+           let query = window.location.search.substring(1);
+           let vars = query.split("&");
+           for (var i=0;i<vars.length;i++) {
+                   var pair = vars[i].split("=");
+                   if(pair[0] == variable){return pair[1];}
+           }
+           return(false);
+    }
+
     let maleQuantity = m.length;
     let femaleQuantity = f.length;
     let modelNo = 0;
-    let genderData = document.querySelector('#gender_data').innerText;
-    let timeData = document.querySelector('#time_data').innerText;
+    // let genderData = document.querySelector('#gender_data').innerText;
+    // let timeData = document.querySelector('#time_data').innerText;
+    let genderData = getQueryVariable("selectGender");
+    let timeData = getQueryVariable("selectTime");
     let imageContainer = document.querySelector('.img-container');
     let skipBtn = document.querySelector('.skip-button');
     let display = document.querySelector('#time');
