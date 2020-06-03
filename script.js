@@ -20,41 +20,41 @@ document.addEventListener('DOMContentLoaded', function () {
     let maleQuantity = m.length;
     let femaleQuantity = f.length;
     let modelNo = 0;
-    // let genderData = document.querySelector('#gender_data').innerText;
+    // let modelData = document.querySelector('#gender_data').innerText;
     // let timeData = document.querySelector('#time_data').innerText;
-    let genderData = getQueryVariable("selectGender");
+    let modelData = getQueryVariable("Models");
     let timeData = getQueryVariable("selectTime");
     let imageContainer = document.querySelector('.img-container');
     let skipBtn = document.querySelector('.skip-button');
     let display = document.querySelector('#time');
-    let genderSet;
+    let modelSet;
     let intv;
 
 
     function getModels(){
         
-        if (genderData == "All") {
+        if (modelData == "All") {
             let randomNo = Math.random();
-            genderSet = (randomNo > 0.5) ? m : f;  
+            modelSet = (randomNo > 0.5) ? m : f;  
         }
-        else if (genderData == "M") {
-            genderSet = m;
+        else if (modelData == "M") {
+            modelSet = m;
         }
-        else if (genderData == "F") {
-            genderSet = f;
+        else if (modelData == "F") {
+            modelSet = f;
         }
-        // return genderSet;
+        // return modelSet;
     }
 
     function setModel(){
-        if (genderSet == m) { 
+        if (modelSet == m) { 
             modelNo = Math.floor(Math.random() * (maleQuantity - 0)) + 0;
         }
-        if (genderSet == f) { 
+        if (modelSet == f) { 
             modelNo = Math.floor(Math.random() * (femaleQuantity - 0)) + 0;
         }
      
-        imageContainer.innerHTML = genderSet[modelNo];
+        imageContainer.innerHTML = modelSet[modelNo];
     }
 
     function setPoseTime(time) {
